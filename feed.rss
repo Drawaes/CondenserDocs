@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+	<channel>
+		<title />
+		<link>http://drawaes.github.io/</link>
+		<description />
+		<copyright>2017</copyright>
+		<pubDate>Wed, 15 Feb 2017 00:20:25 GMT</pubDate>
+		<lastBuildDate>Wed, 15 Feb 2017 00:20:25 GMT</lastBuildDate>
+		<item>
+			<title>New Release</title>
+			<link>http://drawaes.github.io/blog/new-release</link>
+			<description>&lt;p&gt;There is a new release out, go get it now.&lt;/p&gt;</description>
+			<author>me</author>
+			<guid>http://drawaes.github.io/blog/new-release</guid>
+			<pubDate>Fri, 01 Jan 2016 00:00:00 GMT</pubDate>
+		</item>
+	</channel>
+</rss>
