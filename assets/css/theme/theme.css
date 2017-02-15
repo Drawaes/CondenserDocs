@@ -3,7 +3,7 @@ body.layout-boxed {
   background-color: #f4f4f4;
 }
 body.layout-boxed .top-banner {
-  background-color: #337ab7;
+  background-color: white;
   position: absolute;
   top: 0;
   left: 0;
@@ -65,10 +65,10 @@ h1 {
   }
 }
 .main-header {
-  background-color: #337ab7;
+  background-color: white;
 }
 .main-header .navbar {
-  background-color: #337ab7;
+  background-color: white;
 }
 .main-header .navbar .nav > li > a {
   color: white;
@@ -94,7 +94,7 @@ h1 {
   color: white;
 }
 .main-header .navbar .sidebar-toggle:hover {
-  background-color: #2e6da4;
+  background-color: #f2f2f2;
 }
 .main-header .navbar .navbar-toggle {
   font-family: "fontAwesome";
@@ -110,16 +110,16 @@ h1 {
     color: white;
   }
   .main-header .navbar .dropdown-menu li a:hover {
-    background: #2e6da4;
+    background: #f2f2f2;
   }
 }
 .main-header .logo {
-  background-color: #337ab7;
+  background-color: white;
   color: white;
   border-bottom: 0 solid transparent;
 }
 .main-header .logo:hover {
-  background-color: #3278b3;
+  background-color: #fcfcfc;
 }
 @media (max-width: 767px) {
   .main-header .logo {
@@ -137,7 +137,7 @@ h1 {
   }
 }
 .main-header li.user-header {
-  background-color: #337ab7;
+  background-color: white;
 }
 .wrapper,
 .layout-boxed .wrapper {
@@ -160,7 +160,7 @@ h1 {
   padding-right: 30px;
 }
 .content h1 {
-  color: #5094ce;
+  color: white;
   font-style: italic;
 }
 .wrapper,
@@ -195,7 +195,7 @@ h1 {
   background: #f4f4f5;
 }
 .sidebar-menu > li.active {
-  border-left-color: #337ab7;
+  border-left-color: white;
 }
 .sidebar-menu > li.active > a {
   font-weight: 600;
@@ -283,7 +283,7 @@ h1 {
   color: #333333;
 }
 .sidebar-menu li a:hover {
-  color: #337ab7;
+  color: white;
 }
 .sidebar-menu li.treeview.active > a,
 .sidebar-menu > li.treeview.active > a,
@@ -298,11 +298,11 @@ h1 {
   background: transparent;
 }
 .sidebar-menu li.selected {
-  background-color: #eff5fb;
+  background-color: white;
   border-radius: 6px;
 }
 .sidebar-menu li.selected > a {
-  background-color: #337ab7 !important;
+  background-color: white !important;
   color: white;
   font-weight: 600;
 }
@@ -365,11 +365,11 @@ h1 {
   background-color: #f9fafc;
 }
 .table thead tr {
-  background-color: #337ab7;
+  background-color: white;
   color: white;
 }
 .box {
-  border-top-color: #286090;
+  border-top-color: #e6e6e6;
 }
 .main-header,
 .main-footer {
@@ -392,12 +392,12 @@ h1 {
   background-color: white;
 }
 .layout-top-nav .main-header > .logo {
-  background-color: #337ab7;
+  background-color: white;
   color: white;
   border-bottom: 0 solid transparent;
 }
 .layout-top-nav .main-header > .logo:hover {
-  background-color: #3278b3;
+  background-color: #fcfcfc;
 }
 hr {
   border-top-color: #b5bbc8;
@@ -405,7 +405,7 @@ hr {
 .lead {
   padding: 10px 20px;
   margin: 0 0 20px;
-  border-left: 5px solid #337ab7;
+  border-left: 5px solid white;
 }
 .three-cols th,
 .three-cols td {
@@ -566,14 +566,14 @@ code a {
 .node circle,
 .node ellipse,
 .node polygon {
-  fill: #eff5fb;
+  fill: white;
   stroke: black;
 }
 .type-node rect,
 .type-node circle,
 .type-node ellipse,
 .type-node polygon {
-  fill: #a0c4e4;
+  fill: white;
   stroke: black;
 }
 .cluster rect {
@@ -583,5 +583,5 @@ code a {
 /* Turbolinks */
 
 .turbolinks-progress-bar {
-  background-color: #337ab7 !important;
+  background-color: white !important;
 }
