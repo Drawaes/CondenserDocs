@@ -4,3 +4,4 @@ Settings[Keys.Host] = "drawaes.github.io";
 Settings[DocsKeys.BaseEditUrl] = "https://github.com/Drawaes/CondenserDocs/tree/master/input";
 Settings[Keys.LinkRoot] = "/CondenserDocs";
 Settings[DocsKeys.Logo] = "/assets/img/logo.png";
+Settings[DocsKeys.IncludeGlobalNamespace] = false;
