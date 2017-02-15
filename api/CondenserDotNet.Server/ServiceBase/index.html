@@ -36,8 +36,12 @@
             <header class="main-header">   
                      
                 <a href="/CondenserDocs/" class="logo">
-                            <span>Docs</span>
-                </a>   
+
+                                <!-- mini logo for sidebar mini 50x50 pixels -->
+                                <span class="logo-mini"><img src="/CondenserDocs/assets/img/logo.png"></span>
+                                <!-- logo for regular state and mobile devices -->
+                                <span class="logo-lg"><img src="/CondenserDocs/assets/img/logo.png"></span>
+                                            </a>   
                          
                 <nav class="navbar navbar-static-top" role="navigation">
                     <!-- Sidebar toggle button-->
@@ -129,6 +133,11 @@
 			<li class="header">Namespace</li>
 		<li><a href="/CondenserDocs/api/CondenserDotNet.Server">CondenserDotNet<wbr>.Server</a></li>
 		<li role="separator" class="divider"></li>
+			<li class="header">Interface Types</li>
+				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/IConsulService">IConsulService</a></li>
+				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/IHttpClientConfig">IHttpClientConfig</a></li>
+				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/IService">IService</a></li>
+				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/IUsageInfo">IUsageInfo</a></li>
 			<li class="header">Class Types</li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/CondenserConfiguration">Condenser<wbr>Configuration</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/CustomRouter">CustomRouter</a></li>
@@ -136,11 +145,6 @@
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/RoutingHost">RoutingHost</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/Service">Service</a></li>
 				<li class="selected"><a href="/CondenserDocs/api/CondenserDotNet.Server/ServiceBase">ServiceBase</a></li>
-			<li class="header">Interface Types</li>
-				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/IConsulService">IConsulService</a></li>
-				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/IHttpClientConfig">IHttpClientConfig</a></li>
-				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/IService">IService</a></li>
-				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/IUsageInfo">IUsageInfo</a></li>
 
 
                     </ul>
@@ -186,11 +190,11 @@
 								<dt>Derived Types</dt>
 								<dd>
 									<ul class="list-unstyled">
-											<li><a href="/CondenserDocs/api/CondenserDotNet.Server.Routes/ChangeRoutingStrategy">Change<wbr>Routing<wbr>Strategy</a></li>								
-											<li><a href="/CondenserDocs/api/CondenserDotNet.Server.Routes/ServerStatsRoute">ServerStatsRoute</a></li>								
-											<li><a href="/CondenserDocs/api/CondenserDotNet.Server.Routes/TreeRouter">TreeRouter</a></li>								
-											<li><a href="/CondenserDocs/api/CondenserDotNet.Server.Routes/HealthRouter">HealthRouter</a></li>								
 											<li><a href="/CondenserDocs/api/CondenserDotNet.Server.Routes/RouteSummary">RouteSummary</a></li>								
+											<li><a href="/CondenserDocs/api/CondenserDotNet.Server.Routes/TreeRouter">TreeRouter</a></li>								
+											<li><a href="/CondenserDocs/api/CondenserDotNet.Server.Routes/ChangeRoutingStrategy">Change<wbr>Routing<wbr>Strategy</a></li>								
+											<li><a href="/CondenserDocs/api/CondenserDotNet.Server.Routes/HealthRouter">HealthRouter</a></li>								
+											<li><a href="/CondenserDocs/api/CondenserDotNet.Server.Routes/ServerStatsRoute">ServerStatsRoute</a></li>								
 									</ul>
 								</dd>			
 							
@@ -204,16 +208,16 @@
 	click Interface0 "/CondenserDocs/api/CondenserDotNet.Server/IService"
 	Type["ServiceBase"]
 class Type type-node
-	Type--&gt;Derived0["ChangeRoutingStrategy"]
-	click Derived0 "/CondenserDocs/api/CondenserDotNet.Server.Routes/ChangeRoutingStrategy"
-	Type--&gt;Derived1["ServerStatsRoute"]
-	click Derived1 "/CondenserDocs/api/CondenserDotNet.Server.Routes/ServerStatsRoute"
-	Type--&gt;Derived2["TreeRouter"]
-	click Derived2 "/CondenserDocs/api/CondenserDotNet.Server.Routes/TreeRouter"
+	Type--&gt;Derived0["RouteSummary"]
+	click Derived0 "/CondenserDocs/api/CondenserDotNet.Server.Routes/RouteSummary"
+	Type--&gt;Derived1["TreeRouter"]
+	click Derived1 "/CondenserDocs/api/CondenserDotNet.Server.Routes/TreeRouter"
+	Type--&gt;Derived2["ChangeRoutingStrategy"]
+	click Derived2 "/CondenserDocs/api/CondenserDotNet.Server.Routes/ChangeRoutingStrategy"
 	Type--&gt;Derived3["HealthRouter"]
 	click Derived3 "/CondenserDocs/api/CondenserDotNet.Server.Routes/HealthRouter"
-	Type--&gt;Derived4["RouteSummary"]
-	click Derived4 "/CondenserDocs/api/CondenserDotNet.Server.Routes/RouteSummary"
+	Type--&gt;Derived4["ServerStatsRoute"]
+	click Derived4 "/CondenserDocs/api/CondenserDotNet.Server.Routes/ServerStatsRoute"
 
 						</div>
 					</div>
