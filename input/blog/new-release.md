@@ -1,6 +1,6 @@
-Title: New Release
-Published: 1/1/2016
-Category: Release
-Author: me
+Title: Documentation started
+Published: 16/02/2017
+Category: Documentation
+Author: Tim Seaward
 ---
-There is a new release out, go get it now.
+We have started a new documentation site with a new Logo!
