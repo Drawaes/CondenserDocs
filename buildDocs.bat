@@ -1,2 +1,1 @@
-wyam build
-wyam preview --virtual-dir CondenserDocs
+wyam build --virtual-dir CondenserDocs --preview --watch
