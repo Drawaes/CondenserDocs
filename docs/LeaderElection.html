@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/CondenserDocs/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/CondenserDocs/assets/img/favicon.ico" type="image/x-icon">
-        <title>Docs - Command Line</title>
+        <title>Docs - Leaderelection</title>
         <link href="/CondenserDocs/assets/css/mermaid.css" rel="stylesheet">
         <link href="/CondenserDocs/assets/css/highlight.css" rel="stylesheet">
         <link href="/CondenserDocs/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
@@ -79,7 +79,7 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-        <div><p><a href="https://github.com/Drawaes/CondenserDocs/tree/master/input/docs/command-line.md"><i class="fa fa-pencil-square" aria-hidden="true"></i> Edit Content</a></p></div>
+        <div><p><a href="https://github.com/Drawaes/CondenserDocs/tree/master/input/docs/LeaderElection.md"><i class="fa fa-pencil-square" aria-hidden="true"></i> Edit Content</a></p></div>
     <div id="infobar-headings"></div>
 
                 </section>
@@ -88,7 +88,8 @@
 
                     <ul class="sidebar-menu">
                         
-                <li class="selected"><a href="/CondenserDocs/docs/command-line">Command Line</a></li>
+                <li><a href="/CondenserDocs/docs/Configuration">Configuration</a></li>
+                <li class="selected"><a href="/CondenserDocs/docs/LeaderElection">Leaderelection</a></li>
                 <li><a href="/CondenserDocs/docs/Service-Registration">Service Registration</a></li>
 
                     </ul>
@@ -102,10 +103,25 @@
 
 
 	<section class="content-header">
-		<h1>Command Line</h1>
+		<h1>Leaderelection</h1>
 	</section>
 	<section class="content">
-		<p>Here are some instructions on how to use the command line.</p>
+		<h3 id="leader-election">Leader Election</h3>
+<p>You can participate in leader election using the consul sessions. You simply ask for a LeaderWatcher based on a predefined key for your application.</p>
+<pre><code class="language-csharp">var watcher1 = manager.Leaders.GetLeaderWatcher(leadershipKey);
+</code></pre>
+<p>You can then await on this object until a leader is elected and it will return when someone is elected and tell you who it is.</p>
+<pre><code class="language-csharp">var leader = await watcher1.GetCurrentLeaderAsync();
+</code></pre>
+<p>If you would like to get the leadership you can do so, the GetLeadershipAsync will return once you have become leader. You can call this over and over to ensure that you haven't lost the leadership</p>
+<pre><code class="language-csharp">while(true)
+{
+  await watcher1.GetLeadershipAsync();
+  //Do some work that only the leader should do
+  //then loop back to do the next bit of work
+  //but check that we are still the leader
+}
+</code></pre>
 
 	</section>
                 

@@ -71,7 +71,7 @@ h1 {
   background-color: white;
 }
 .main-header .navbar .nav > li > a {
-  color: white;
+  color: black;
 }
 .main-header .navbar .nav > li > a:hover,
 .main-header .navbar .nav > li > a:active,
@@ -84,14 +84,14 @@ h1 {
   color: #f6f6f6;
 }
 .main-header .navbar .sidebar-toggle {
-  color: white;
+  color: black;
 }
 .main-header .navbar .sidebar-toggle:hover {
   color: #f6f6f6;
   background: rgba(0, 0, 0, 0.1);
 }
 .main-header .navbar .sidebar-toggle {
-  color: white;
+  color: black;
 }
 .main-header .navbar .sidebar-toggle:hover {
   background-color: #f2f2f2;
