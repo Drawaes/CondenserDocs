@@ -88,8 +88,10 @@
 
                     <ul class="sidebar-menu">
                         
+                <li><a href="/CondenserDocs/docs/Calling-a-Service">Calling A Service</a></li>
                 <li><a href="/CondenserDocs/docs/Configuration">Configuration</a></li>
                 <li><a href="/CondenserDocs/docs/LeaderElection">Leaderelection</a></li>
+                <li><a href="/CondenserDocs/docs/Service-Port">Service Port</a></li>
                 <li class="selected"><a href="/CondenserDocs/docs/Service-Registration">Service Registration</a></li>
 
                     </ul>
@@ -106,13 +108,19 @@
 		<h1>Service Registration</h1>
 	</section>
 	<section class="content">
-		<h2 id="example-use-to-register-a-service">Example use to register a service</h2>
-<pre><code class="language-csharp">var serviceManager = new ServiceManager(&quot;TestService&quot;);
-    await serviceManager.AddHttpHealthCheck(&quot;health&quot;,10)
-        .AddApiUrl(&quot;/api/someObject&quot;)
-        .AddApiUrl(&quot;/api/someOtherObject&quot;)
-        .RegisterServiceAsync();
+		<h2 id="example-to-configure-kestrel-on-a-dynamic-port">Example to configure Kestrel on a dynamic port</h2>
+<pre><code class="language-csharp">var host = new WebHostBuilder()
+    .UseKestrel()
+    .UseUrls($&quot;http://*:{serviceManager.ServicePort}&quot;)
+    .UseStartup&lt;Startup&gt;()
+    .Build();
+
+host.Run();
 </code></pre>
+<p>The first available port in the dynamic range for windows is allocated by default. You can override this if you have a specific port you would like to use.</p>
+<pre><code class="language-csharp">serviceManager.ServicePort = 5000;
+</code></pre>
+<p>You should assign this before registering or call RegisterServiceAsync() again if you change the details to send the new configuration to Consul.</p>
 
 	</section>
                 
