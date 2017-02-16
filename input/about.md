@@ -1,3 +1,3 @@
-Title: About This Project
+Title: About Condenser
 ---
 This project is awesome!
