@@ -1,4 +1,4 @@
-Description: Service Ports.
+Description: How to register your service with the service registry.
 ---
 
 ## Example to configure Kestrel on a dynamic port

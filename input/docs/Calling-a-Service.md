@@ -1,4 +1,4 @@
-Description: Service Ports.
+Description: How to get an instance of a service and call it.
 ---
 
 ## Example to get an instance of a service to connect to

@@ -1,4 +1,4 @@
-Description: How to use the command line.
+Description: How to load config into a simple dictionary.
 ---
 
 ## Example for configuration
