@@ -1,5 +1,5 @@
 Title: Documentation started
-Published: 16/02/2017
+Published: 2017-02-16
 Category: Documentation
 Author: Tim Seaward
 ---
