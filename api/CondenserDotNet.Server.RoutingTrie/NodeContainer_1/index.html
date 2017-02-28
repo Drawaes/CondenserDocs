@@ -172,7 +172,7 @@
 								<dt>Interfaces</dt>
 								<dd>
 									<ul class="list-unstyled">
-											<li>IEnumerable<wbr>&lt;KeyValuePair<wbr>&lt;string[], <wbr>Node<wbr>&lt;T&gt;<wbr>&gt;<wbr>&gt;<wbr></li>								
+											<li>IEnumerable<wbr>&lt;Tuple<wbr>&lt;string[], <wbr>Node<wbr>&lt;T&gt;<wbr>&gt;<wbr>&gt;<wbr></li>								
 											<li>IEnumerable</li>								
 									</ul>
 								</dd>
@@ -191,7 +191,7 @@
 						<div class="mermaid">
 							graph TD
 	Base0["object"]--&gt;Type
-	Interface0["IEnumerable&lt;KeyValuePair&lt;string[], Node&lt;T&gt;&gt;&gt;"]-.-&gt;Type
+	Interface0["IEnumerable&lt;Tuple&lt;string[], Node&lt;T&gt;&gt;&gt;"]-.-&gt;Type
 	Interface1["IEnumerable"]-.-&gt;Type
 	Type["NodeContainer&lt;T&gt;"]
 class Type type-node
@@ -203,7 +203,7 @@ class Type type-node
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public class NodeContainer&lt;T&gt; : IEnumerable&lt;KeyValuePair&lt;string[], Node&lt;T&gt;&gt;&gt;, IEnumerable</code></pre>
+	<pre><code>public class NodeContainer&lt;T&gt; : IEnumerable&lt;Tuple&lt;string[], Node&lt;T&gt;&gt;&gt;, IEnumerable</code></pre>
 
 
 
@@ -312,7 +312,7 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/CondenserDocs/api/CondenserDotNet.Server.RoutingTrie/NodeContainer_1/DE7ECC6C">GetEnumerator<wbr>()<wbr></a></td>
-								<td>IEnumerator<wbr>&lt;KeyValuePair<wbr>&lt;string[], <wbr>Node<wbr>&lt;T&gt;<wbr>&gt;<wbr>&gt;<wbr></td>
+								<td>IEnumerator<wbr>&lt;Tuple<wbr>&lt;string[], <wbr>Node<wbr>&lt;T&gt;<wbr>&gt;<wbr>&gt;<wbr></td>
 								<td>
 									<div></div>
 								</td>

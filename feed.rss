@@ -5,8 +5,19 @@
 		<link>http://drawaes.github.io/CondenserDocs</link>
 		<description />
 		<copyright>2017</copyright>
-		<pubDate>Fri, 17 Feb 2017 02:16:57 GMT</pubDate>
-		<lastBuildDate>Fri, 17 Feb 2017 02:16:57 GMT</lastBuildDate>
+		<pubDate>Tue, 28 Feb 2017 05:23:24 GMT</pubDate>
+		<lastBuildDate>Tue, 28 Feb 2017 05:23:24 GMT</lastBuildDate>
+		<item>
+			<title>Refactored the Client Libraries</title>
+			<link>http://drawaes.github.io/CondenserDocs/blog/client-refactor</link>
+			<description>&lt;p&gt;There has been a pretty large refactor of the client libraries. As with any very early API it has taken some time using the library in the real
+world to gain an understanding of what works and what doesn't. This has shown that the current API for registering your services required
+a lot of boilerplate code. Also if you wanted to change a single setting it required you to set a lot of settings you would like to leave it as
+the defaults.&lt;/p&gt;</description>
+			<author>Tim Seaward</author>
+			<guid>http://drawaes.github.io/CondenserDocs/blog/client-refactor</guid>
+			<pubDate>Tue, 28 Feb 2017 00:00:00 GMT</pubDate>
+		</item>
 		<item>
 			<title>Documentation started</title>
 			<link>http://drawaes.github.io/CondenserDocs/blog/new-release</link>

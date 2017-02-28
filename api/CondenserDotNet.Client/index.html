@@ -139,25 +139,32 @@
 				<li class="treeview active selected">
 				<a href="/CondenserDocs/api/CondenserDotNet.Client">CondenserDotNet<wbr>.Client</a> <a href="#" class="expand"></a>
 				<ul class="treeview-menu">
-						<li><a href="/CondenserDocs/api/CondenserDotNet.Client.Configuration">CondenserDotNet<wbr>.Client<wbr>.Configuration</a></li>
-			<li><a href="/CondenserDocs/api/CondenserDotNet.Client.DataContracts">CondenserDotNet<wbr>.Client<wbr>.DataContracts</a></li>
-			<li><a href="/CondenserDocs/api/CondenserDotNet.Client.Internal">CondenserDotNet<wbr>.Client<wbr>.Internal</a></li>
+						<li><a href="/CondenserDocs/api/CondenserDotNet.Client.DataContracts">CondenserDotNet<wbr>.Client<wbr>.DataContracts</a></li>
+			<li><a href="/CondenserDocs/api/CondenserDotNet.Client.Leadership">CondenserDotNet<wbr>.Client<wbr>.Leadership</a></li>
+			<li><a href="/CondenserDocs/api/CondenserDotNet.Client.Services">CondenserDotNet<wbr>.Client<wbr>.Services</a></li>
+</ul></li>
+				<li class="treeview">
+				<a href="/CondenserDocs/api/CondenserDotNet.Configuration">CondenserDotNet<wbr>.Configuration</a> <a href="#" class="expand"></a>
+				<ul class="treeview-menu">
+						<li><a href="/CondenserDocs/api/CondenserDotNet.Configuration.Consul">CondenserDotNet<wbr>.Configuration<wbr>.Consul</a></li>
 </ul></li>
 				<li class="treeview">
 				<a href="/CondenserDocs/api/CondenserDotNet.Core">CondenserDotNet<wbr>.Core</a> <a href="#" class="expand"></a>
 				<ul class="treeview-menu">
-						<li><a href="/CondenserDocs/api/CondenserDotNet.Core.DataContracts">CondenserDotNet<wbr>.Core<wbr>.DataContracts</a></li>
+						<li><a href="/CondenserDocs/api/CondenserDotNet.Core.Consul">CondenserDotNet<wbr>.Core<wbr>.Consul</a></li>
+			<li><a href="/CondenserDocs/api/CondenserDotNet.Core.DataContracts">CondenserDotNet<wbr>.Core<wbr>.DataContracts</a></li>
 			<li><a href="/CondenserDocs/api/CondenserDotNet.Core.Routing">CondenserDotNet<wbr>.Core<wbr>.Routing</a></li>
 </ul></li>
 				<li class="treeview">
 				<a href="/CondenserDocs/api/CondenserDotNet.Server">CondenserDotNet<wbr>.Server</a> <a href="#" class="expand"></a>
 				<ul class="treeview-menu">
 						<li><a href="/CondenserDocs/api/CondenserDotNet.Server.Builder">CondenserDotNet<wbr>.Server<wbr>.Builder</a></li>
-			<li><a href="/CondenserDocs/api/CondenserDotNet.Server.Consul">CondenserDotNet<wbr>.Server<wbr>.Consul</a></li>
 			<li><a href="/CondenserDocs/api/CondenserDotNet.Server.DataContracts">CondenserDotNet<wbr>.Server<wbr>.DataContracts</a></li>
 			<li><a href="/CondenserDocs/api/CondenserDotNet.Server.Extensions">CondenserDotNet<wbr>.Server<wbr>.Extensions</a></li>
+			<li><a href="/CondenserDocs/api/CondenserDotNet.Server.HttpPipelineClient">CondenserDotNet<wbr>.Server<wbr>.HttpPipelineClient</a></li>
 			<li><a href="/CondenserDocs/api/CondenserDotNet.Server.Routes">CondenserDotNet<wbr>.Server<wbr>.Routes</a></li>
 			<li><a href="/CondenserDocs/api/CondenserDotNet.Server.RoutingTrie">CondenserDotNet<wbr>.Server<wbr>.RoutingTrie</a></li>
+			<li><a href="/CondenserDocs/api/CondenserDotNet.Server.Websockets">CondenserDotNet<wbr>.Server<wbr>.Websockets</a></li>
 			<li><a href="/CondenserDocs/api/CondenserDotNet.Server.WindowsAuthentication">CondenserDotNet<wbr>.Server<wbr>.<wbr>Windows<wbr>Authentication</a></li>
 </ul></li></ul></li>      
 
@@ -190,14 +197,6 @@
 							</tr>
 						</thead>
 							<tbody><tr>
-								<td><a href="/CondenserDocs/api/CondenserDotNet.Client/IConfigurationRegistry">I<wbr>Configuration<wbr>Registry</a></td>
-									<td></td>
-							</tr>
-							<tr>
-								<td><a href="/CondenserDocs/api/CondenserDotNet.Client/ILeaderRegistry">ILeaderRegistry</a></td>
-									<td></td>
-							</tr>
-							<tr>
 								<td><a href="/CondenserDocs/api/CondenserDotNet.Client/IServiceManager">IServiceManager</a></td>
 									<td></td>
 							</tr>
@@ -220,20 +219,6 @@
 							</tr>
 						</thead>
 							<tbody><tr>
-								<td><a href="/CondenserDocs/api/CondenserDotNet.Client/ConfigurationRegistry">Configuration<wbr>Registry</a></td>
-									<td>
-    This manages the configuration keys you load as well as watching live keys and allowing you to add or update keys.
-    </td>
-							</tr>
-							<tr>
-								<td><a href="/CondenserDocs/api/CondenserDotNet.Client/ConfigurationRegistryExtensions">Configuration<wbr>Registry<wbr>Extensions</a></td>
-									<td></td>
-							</tr>
-							<tr>
-								<td><a href="/CondenserDocs/api/CondenserDotNet.Client/LeaderRegistry">LeaderRegistry</a></td>
-									<td></td>
-							</tr>
-							<tr>
 								<td><a href="/CondenserDocs/api/CondenserDotNet.Client/RegistrationExtensions">Registration<wbr>Extensions</a></td>
 									<td></td>
 							</tr>
@@ -243,6 +228,10 @@
 							</tr>
 							<tr>
 								<td><a href="/CondenserDocs/api/CondenserDotNet.Client/ServiceManager">ServiceManager</a></td>
+									<td></td>
+							</tr>
+							<tr>
+								<td><a href="/CondenserDocs/api/CondenserDotNet.Client/ServiceManagerConfig">ServiceManagerConfig</a></td>
 									<td></td>
 							</tr>
 							<tr>
@@ -264,15 +253,15 @@
 							</tr>
 						</thead>
 							<tbody><tr>
-								<td><a href="/CondenserDocs/api/CondenserDotNet.Client.Configuration">CondenserDotNet<wbr>.Client<wbr>.Configuration</a></td>
-									<td></td>
-							</tr>
-							<tr>
 								<td><a href="/CondenserDocs/api/CondenserDotNet.Client.DataContracts">CondenserDotNet<wbr>.Client<wbr>.DataContracts</a></td>
 									<td></td>
 							</tr>
 							<tr>
-								<td><a href="/CondenserDocs/api/CondenserDotNet.Client.Internal">CondenserDotNet<wbr>.Client<wbr>.Internal</a></td>
+								<td><a href="/CondenserDocs/api/CondenserDotNet.Client.Leadership">CondenserDotNet<wbr>.Client<wbr>.Leadership</a></td>
+									<td></td>
+							</tr>
+							<tr>
+								<td><a href="/CondenserDocs/api/CondenserDotNet.Client.Services">CondenserDotNet<wbr>.Client<wbr>.Services</a></td>
 									<td></td>
 							</tr>
 					</tbody></table>

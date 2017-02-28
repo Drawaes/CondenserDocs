@@ -133,13 +133,20 @@
 		<li><a href="/CondenserDocs/api/CondenserDotNet.Server">CondenserDotNet<wbr>.Server</a></li>
 		<li role="separator" class="divider"></li>
 			<li class="header">Class Types</li>
+				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/ApplicationBuilderExtensions">Application<wbr>Builder<wbr>Extensions</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/CondenserConfiguration">Condenser<wbr>Configuration</a></li>
+				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/ConfigurationBuilder">ConfigurationBuilder</a></li>
+				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/CurrentState">CurrentState</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/CustomRouter">CustomRouter</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/RoutingData">RoutingData</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/RoutingHost">RoutingHost</a></li>
+				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/RoutingMiddleware">RoutingMiddleware</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/Service">Service</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/ServiceBase">ServiceBase</a></li>
+				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/ServiceCallMiddleware">Service<wbr>Call<wbr>Middleware</a></li>
+				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/ServiceCollectionExtensions">Service<wbr>Collection<wbr>Extensions</a></li>
 			<li class="header">Interface Types</li>
+				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/IConfigurationBuilder">I<wbr>Configuration<wbr>Builder</a></li>
 				<li class="selected"><a href="/CondenserDocs/api/CondenserDotNet.Server/IConsulService">IConsulService</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/IHttpClientConfig">IHttpClientConfig</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/IService">IService</a></li>
@@ -184,6 +191,7 @@
 								<dt>Implementing Types</dt>
 								<dd>
 									<ul class="list-unstyled">
+											<li><a href="/CondenserDocs/api/CondenserDotNet.Server.HttpPipelineClient/ServiceWithCustomClient">Service<wbr>With<wbr>Custom<wbr>Client</a></li>								
 											<li><a href="/CondenserDocs/api/CondenserDotNet.Server/Service">Service</a></li>								
 									</ul>
 								</dd>				
@@ -196,8 +204,10 @@
 	click Interface0 "/CondenserDocs/api/CondenserDotNet.Server/IService"
 	Type["IConsulService"]
 class Type type-node
-	Type-.-&gt;Implementing0["Service"]
-	click Implementing0 "/CondenserDocs/api/CondenserDotNet.Server/Service"
+	Type-.-&gt;Implementing0["ServiceWithCustomClient"]
+	click Implementing0 "/CondenserDocs/api/CondenserDotNet.Server.HttpPipelineClient/ServiceWithCustomClient"
+	Type-.-&gt;Implementing1["Service"]
+	click Implementing1 "/CondenserDocs/api/CondenserDotNet.Server/Service"
 
 						</div>
 					</div>
@@ -230,7 +240,7 @@ class Type type-node
 						</thead>
 							<tbody><tr>
 								<td><a href="/CondenserDocs/api/CondenserDotNet.Server/IConsulService/EDF82D20">Initialise<wbr>(string, <wbr>string, <wbr>string[], <wbr>string, <wbr>int)<wbr></a></td>
-								<td>void</td>
+								<td>Task</td>
 								<td>
 									<div></div>
 								</td>

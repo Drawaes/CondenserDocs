@@ -134,13 +134,20 @@
 		<li><a href="/CondenserDocs/api/CondenserDotNet.Server">CondenserDotNet<wbr>.Server</a></li>
 		<li role="separator" class="divider"></li>
 			<li class="header">Class Types</li>
+				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/ApplicationBuilderExtensions">Application<wbr>Builder<wbr>Extensions</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/CondenserConfiguration">Condenser<wbr>Configuration</a></li>
+				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/ConfigurationBuilder">ConfigurationBuilder</a></li>
+				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/CurrentState">CurrentState</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/CustomRouter">CustomRouter</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/RoutingData">RoutingData</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/RoutingHost">RoutingHost</a></li>
+				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/RoutingMiddleware">RoutingMiddleware</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/Service">Service</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/ServiceBase">ServiceBase</a></li>
+				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/ServiceCallMiddleware">Service<wbr>Call<wbr>Middleware</a></li>
+				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/ServiceCollectionExtensions">Service<wbr>Collection<wbr>Extensions</a></li>
 			<li class="header">Interface Types</li>
+				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/IConfigurationBuilder">I<wbr>Configuration<wbr>Builder</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/IConsulService">IConsulService</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/IHttpClientConfig">IHttpClientConfig</a></li>
 				<li class="selected"><a href="/CondenserDocs/api/CondenserDotNet.Server/IService">IService</a></li>
@@ -179,14 +186,15 @@
 								<dt>Implementing Types</dt>
 								<dd>
 									<ul class="list-unstyled">
-											<li><a href="/CondenserDocs/api/CondenserDotNet.Server/ServiceBase">ServiceBase</a></li>								
-											<li><a href="/CondenserDocs/api/CondenserDotNet.Server.Routes/ChangeRoutingStrategy">Change<wbr>Routing<wbr>Strategy</a></li>								
-											<li><a href="/CondenserDocs/api/CondenserDotNet.Server/IConsulService">IConsulService</a></li>								
-											<li><a href="/CondenserDocs/api/CondenserDotNet.Server.Routes/ServerStatsRoute">ServerStatsRoute</a></li>								
-											<li><a href="/CondenserDocs/api/CondenserDotNet.Server/Service">Service</a></li>								
 											<li><a href="/CondenserDocs/api/CondenserDotNet.Server.Routes/TreeRouter">TreeRouter</a></li>								
 											<li><a href="/CondenserDocs/api/CondenserDotNet.Server.Routes/HealthRouter">HealthRouter</a></li>								
+											<li><a href="/CondenserDocs/api/CondenserDotNet.Server.HttpPipelineClient/ServiceWithCustomClient">Service<wbr>With<wbr>Custom<wbr>Client</a></li>								
+											<li><a href="/CondenserDocs/api/CondenserDotNet.Server/Service">Service</a></li>								
+											<li><a href="/CondenserDocs/api/CondenserDotNet.Server.Routes/ServerStatsRoute">ServerStatsRoute</a></li>								
+											<li><a href="/CondenserDocs/api/CondenserDotNet.Server/IConsulService">IConsulService</a></li>								
 											<li><a href="/CondenserDocs/api/CondenserDotNet.Server.Routes/RouteSummary">RouteSummary</a></li>								
+											<li><a href="/CondenserDocs/api/CondenserDotNet.Server.Routes/ChangeRoutingStrategy">Change<wbr>Routing<wbr>Strategy</a></li>								
+											<li><a href="/CondenserDocs/api/CondenserDotNet.Server/ServiceBase">ServiceBase</a></li>								
 									</ul>
 								</dd>				
 						</dl>
@@ -196,22 +204,24 @@
 							graph TD
 	Type["IService"]
 class Type type-node
-	Type-.-&gt;Implementing0["ServiceBase"]
-	click Implementing0 "/CondenserDocs/api/CondenserDotNet.Server/ServiceBase"
-	Type-.-&gt;Implementing1["ChangeRoutingStrategy"]
-	click Implementing1 "/CondenserDocs/api/CondenserDotNet.Server.Routes/ChangeRoutingStrategy"
-	Type-.-&gt;Implementing2["IConsulService"]
-	click Implementing2 "/CondenserDocs/api/CondenserDotNet.Server/IConsulService"
-	Type-.-&gt;Implementing3["ServerStatsRoute"]
-	click Implementing3 "/CondenserDocs/api/CondenserDotNet.Server.Routes/ServerStatsRoute"
-	Type-.-&gt;Implementing4["Service"]
-	click Implementing4 "/CondenserDocs/api/CondenserDotNet.Server/Service"
-	Type-.-&gt;Implementing5["TreeRouter"]
-	click Implementing5 "/CondenserDocs/api/CondenserDotNet.Server.Routes/TreeRouter"
-	Type-.-&gt;Implementing6["HealthRouter"]
-	click Implementing6 "/CondenserDocs/api/CondenserDotNet.Server.Routes/HealthRouter"
-	Type-.-&gt;Implementing7["RouteSummary"]
-	click Implementing7 "/CondenserDocs/api/CondenserDotNet.Server.Routes/RouteSummary"
+	Type-.-&gt;Implementing0["TreeRouter"]
+	click Implementing0 "/CondenserDocs/api/CondenserDotNet.Server.Routes/TreeRouter"
+	Type-.-&gt;Implementing1["HealthRouter"]
+	click Implementing1 "/CondenserDocs/api/CondenserDotNet.Server.Routes/HealthRouter"
+	Type-.-&gt;Implementing2["ServiceWithCustomClient"]
+	click Implementing2 "/CondenserDocs/api/CondenserDotNet.Server.HttpPipelineClient/ServiceWithCustomClient"
+	Type-.-&gt;Implementing3["Service"]
+	click Implementing3 "/CondenserDocs/api/CondenserDotNet.Server/Service"
+	Type-.-&gt;Implementing4["ServerStatsRoute"]
+	click Implementing4 "/CondenserDocs/api/CondenserDotNet.Server.Routes/ServerStatsRoute"
+	Type-.-&gt;Implementing5["IConsulService"]
+	click Implementing5 "/CondenserDocs/api/CondenserDotNet.Server/IConsulService"
+	Type-.-&gt;Implementing6["RouteSummary"]
+	click Implementing6 "/CondenserDocs/api/CondenserDotNet.Server.Routes/RouteSummary"
+	Type-.-&gt;Implementing7["ChangeRoutingStrategy"]
+	click Implementing7 "/CondenserDocs/api/CondenserDotNet.Server.Routes/ChangeRoutingStrategy"
+	Type-.-&gt;Implementing8["ServiceBase"]
+	click Implementing8 "/CondenserDocs/api/CondenserDotNet.Server/ServiceBase"
 
 						</div>
 					</div>
@@ -242,8 +252,22 @@ class Type type-node
 							</tr>
 						</thead>
 							<tbody><tr>
+								<td><a href="/CondenserDocs/api/CondenserDotNet.Server/IService/37809FA9">IpEndPoint</a></td>
+								<td>IPEndPoint</td>
+								<td>
+									<div></div>
+								</td>
+							</tr>
+							<tr>
 								<td><a href="/CondenserDocs/api/CondenserDotNet.Server/IService/279D129C">NodeId</a></td>
 								<td>string</td>
+								<td>
+									<div></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/CondenserDocs/api/CondenserDotNet.Server/IService/CB1EC1F7">Requires<wbr>Authentication</a></td>
+								<td>bool</td>
 								<td>
 									<div></div>
 								</td>

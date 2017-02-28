@@ -90,6 +90,7 @@
 
     <li class="header"><i class="fa fa-bookmark"></i> Categories</li>    
         <li><a href="/blog/documentation">Documentation</a></li>
+        <li><a href="/blog/refactor">Refactor</a></li>
     
     <li class="header"><i class="fa fa-calendar"></i> Archive</li>    
         <li><a href="/blog/archive/2017/02">February, 2017</a></li>
@@ -113,6 +114,28 @@
 	<section class="content">
 		
 
+        <h2><a href="/CondenserDocs/blog/client-refactor">Refactored the Client Libraries</a></h2>
+<dl class="dl-horizontal">
+    <dt><i class="fa fa-calendar"></i> Published</dt>
+    <dd>Tuesday, February 28, 2017</dd>
+        <dt><i class="fa fa-bookmark"></i> Category</dt>
+        <dd><a href="/blog/refactor">Refactor</a></dd>
+            <dt><i class="fa fa-user"></i> Author</dt>
+        <dd><a href="/blog/author/tim-seaward">Tim Seaward</a></dd>
+</dl>            <div>
+                <p>There has been a pretty large refactor of the client libraries. As with any very early API it has taken some time using the library in the real
+world to gain an understanding of what works and what doesn't. This has shown that the current API for registering your services required
+a lot of boilerplate code. Also if you wanted to change a single setting it required you to set a lot of settings you would like to leave it as
+the defaults.</p>
+<p>We also realised that is was becoming difficult to test various parts of the system and when you only wanted to use a single part (say you
+wanted to find services but you didn't have a service to register yourself) you still required all of the parts.</p>
+<p>Currently the new API is complete for the Registration/Discovery part however we won't be doing an official release yet as we have some work
+to do on the configuration. When the release is done we will likely move the client to 2.0.</p>
+<p>As a final part of the refactor we may move the API router out to a seperate repo and have it on its own path. This has yet to be confirmed.
+Dean is also working on a SPA Gui to manage and view data and statistics from the API Router.</p>
+
+            </div>
+        <hr />
         <h2><a href="/CondenserDocs/blog/new-release">Documentation started</a></h2>
 <dl class="dl-horizontal">
     <dt><i class="fa fa-calendar"></i> Published</dt>
@@ -123,7 +146,7 @@
         <dd><a href="/blog/author/tim-seaward">Tim Seaward</a></dd>
 </dl>            <div>
                 <p>We have started a new documentation site with a new Logo!</p>
-
+                <a href="/CondenserDocs/blog/new-release">Read more...</a>
             </div>
         <hr />
     <nav>

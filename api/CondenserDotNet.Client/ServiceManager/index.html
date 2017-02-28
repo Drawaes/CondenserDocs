@@ -136,17 +136,13 @@
 		<li><a href="/CondenserDocs/api/CondenserDotNet.Client">CondenserDotNet<wbr>.Client</a></li>
 		<li role="separator" class="divider"></li>
 			<li class="header">Interface Types</li>
-				<li><a href="/CondenserDocs/api/CondenserDotNet.Client/IConfigurationRegistry">I<wbr>Configuration<wbr>Registry</a></li>
-				<li><a href="/CondenserDocs/api/CondenserDotNet.Client/ILeaderRegistry">ILeaderRegistry</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Client/IServiceManager">IServiceManager</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Client/ITtlCheck">ITtlCheck</a></li>
 			<li class="header">Class Types</li>
-				<li><a href="/CondenserDocs/api/CondenserDotNet.Client/ConfigurationRegistry">Configuration<wbr>Registry</a></li>
-				<li><a href="/CondenserDocs/api/CondenserDotNet.Client/ConfigurationRegistryExtensions">Configuration<wbr>Registry<wbr>Extensions</a></li>
-				<li><a href="/CondenserDocs/api/CondenserDotNet.Client/LeaderRegistry">LeaderRegistry</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Client/RegistrationExtensions">Registration<wbr>Extensions</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Client/ServiceCollectionExtensions">Service<wbr>Collection<wbr>Extensions</a></li>
 				<li class="selected"><a href="/CondenserDocs/api/CondenserDotNet.Client/ServiceManager">ServiceManager</a></li>
+				<li><a href="/CondenserDocs/api/CondenserDotNet.Client/ServiceManagerConfig">ServiceManagerConfig</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Client/TtlCheck">TtlCheck</a></li>
 
 
@@ -229,19 +225,7 @@ class Type type-node
 							</tr>
 						</thead>
 							<tbody><tr>
-								<td><a href="/CondenserDocs/api/CondenserDotNet.Client/ServiceManager/64074AED">ServiceManager<wbr>(string)<wbr></a></td>
-									<td></td>
-							</tr>
-							<tr>
-								<td><a href="/CondenserDocs/api/CondenserDotNet.Client/ServiceManager/1677045C">ServiceManager<wbr>(string, <wbr>string)<wbr></a></td>
-									<td></td>
-							</tr>
-							<tr>
-								<td><a href="/CondenserDocs/api/CondenserDotNet.Client/ServiceManager/CADCA8E8">ServiceManager<wbr>(string, <wbr>string, <wbr>int)<wbr></a></td>
-									<td></td>
-							</tr>
-							<tr>
-								<td><a href="/CondenserDocs/api/CondenserDotNet.Client/ServiceManager/AA450F25">ServiceManager<wbr>(string, <wbr>string, <wbr>string, <wbr>int)<wbr></a></td>
+								<td><a href="/CondenserDocs/api/CondenserDotNet.Client/ServiceManager/79529219">ServiceManager<wbr>(IOptions<wbr>&lt;<wbr>Service<wbr>Manager<wbr>Config&gt;<wbr>, <wbr>Func<wbr>&lt;HttpClient&gt;<wbr>, <wbr>ILoggerFactory, <wbr>IServer)<wbr></a></td>
 									<td></td>
 							</tr>
 					</tbody></table>
@@ -277,13 +261,6 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/CondenserDocs/api/CondenserDotNet.Client/ServiceManager/AF00B702">Config</a></td>
-								<td><a href="/CondenserDocs/api/CondenserDotNet.Client/IConfigurationRegistry">I<wbr>Configuration<wbr>Registry</a></td>
-								<td>
-									<div></div>
-								</td>
-							</tr>
-							<tr>
 								<td><a href="/CondenserDocs/api/CondenserDotNet.Client/ServiceManager/AF4A4A56">Deregister<wbr>If<wbr>Critical<wbr>After</a></td>
 								<td>TimeSpan</td>
 								<td>
@@ -305,8 +282,8 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/CondenserDocs/api/CondenserDotNet.Client/ServiceManager/D7D5401C">Leaders</a></td>
-								<td><a href="/CondenserDocs/api/CondenserDotNet.Client/ILeaderRegistry">ILeaderRegistry</a></td>
+								<td><a href="/CondenserDocs/api/CondenserDotNet.Client/ServiceManager/203C434E">Logger</a></td>
+								<td>ILogger</td>
 								<td>
 									<div></div>
 								</td>
@@ -347,13 +324,6 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/CondenserDocs/api/CondenserDotNet.Client/ServiceManager/D19CF672">Services</a></td>
-								<td><a href="/CondenserDocs/api/CondenserDotNet.Core/IServiceRegistry">IServiceRegistry</a></td>
-								<td>
-									<div></div>
-								</td>
-							</tr>
-							<tr>
 								<td><a href="/CondenserDocs/api/CondenserDotNet.Client/ServiceManager/49677660">SupportedUrls</a></td>
 								<td>List<wbr>&lt;string&gt;<wbr></td>
 								<td>
@@ -362,6 +332,13 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/CondenserDocs/api/CondenserDotNet.Client/ServiceManager/A8728010">TtlCheck</a></td>
+								<td><a href="/CondenserDocs/api/CondenserDotNet.Client/ITtlCheck">ITtlCheck</a></td>
+								<td>
+									<div></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/CondenserDocs/api/CondenserDotNet.Client/ServiceManager/1F44C15B">TtlCheck1</a></td>
 								<td><a href="/CondenserDocs/api/CondenserDotNet.Client/ITtlCheck">ITtlCheck</a></td>
 								<td>
 									<div></div>
@@ -400,13 +377,6 @@ class Type type-node
 							<tr>
 								<td><a href="/CondenserDocs/api/CondenserDotNet.Client/ServiceManager/8A11426A">Dispose<wbr>(bool)<wbr></a></td>
 								<td>void</td>
-								<td>
-									<div></div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/CondenserDocs/api/CondenserDotNet.Client/ServiceManager/DF68C9FF">GetNextAvailablePort<wbr>()<wbr></a></td>
-								<td>int</td>
 								<td>
 									<div></div>
 								</td>

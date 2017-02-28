@@ -134,13 +134,20 @@
 		<li><a href="/CondenserDocs/api/CondenserDotNet.Server">CondenserDotNet<wbr>.Server</a></li>
 		<li role="separator" class="divider"></li>
 			<li class="header">Class Types</li>
+				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/ApplicationBuilderExtensions">Application<wbr>Builder<wbr>Extensions</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/CondenserConfiguration">Condenser<wbr>Configuration</a></li>
+				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/ConfigurationBuilder">ConfigurationBuilder</a></li>
+				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/CurrentState">CurrentState</a></li>
 				<li class="selected"><a href="/CondenserDocs/api/CondenserDotNet.Server/CustomRouter">CustomRouter</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/RoutingData">RoutingData</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/RoutingHost">RoutingHost</a></li>
+				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/RoutingMiddleware">RoutingMiddleware</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/Service">Service</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/ServiceBase">ServiceBase</a></li>
+				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/ServiceCallMiddleware">Service<wbr>Call<wbr>Middleware</a></li>
+				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/ServiceCollectionExtensions">Service<wbr>Collection<wbr>Extensions</a></li>
 			<li class="header">Interface Types</li>
+				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/IConfigurationBuilder">I<wbr>Configuration<wbr>Builder</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/IConsulService">IConsulService</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/IHttpClientConfig">IHttpClientConfig</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/IService">IService</a></li>
@@ -177,7 +184,7 @@
 								<dt>Base Types</dt>
 								<dd>
 									<ul class="list-unstyled">										
-											<li>IRouter</li>								
+											<li>object</li>								
 									</ul>
 								</dd>				
 							
@@ -187,7 +194,7 @@
 					<div class="col-md-6">
 						<div class="mermaid">
 							graph TD
-	Base0["IRouter"]--&gt;Type
+	Base0["object"]--&gt;Type
 	Type["CustomRouter"]
 class Type type-node
 
@@ -198,7 +205,7 @@ class Type type-node
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public class CustomRouter : IRouter</code></pre>
+	<pre><code>public class CustomRouter</code></pre>
 
 
 
@@ -253,8 +260,8 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/CondenserDocs/api/CondenserDotNet.Server/CustomRouter/D067F870">GetVirtualPath<wbr>(VirtualPathContext)<wbr></a></td>
-								<td>VirtualPathData</td>
+								<td><a href="/CondenserDocs/api/CondenserDotNet.Server/CustomRouter/773C7BA4">GetServiceFromRoute<wbr>(PathString, <wbr>string)<wbr></a></td>
+								<td><a href="/CondenserDocs/api/CondenserDotNet.Server/IService">IService</a></td>
 								<td>
 									<div></div>
 								</td>
@@ -269,13 +276,6 @@ class Type type-node
 							<tr>
 								<td><a href="/CondenserDocs/api/CondenserDotNet.Server/CustomRouter/BB44FCF4">Remove<wbr>Service<wbr>From<wbr>Route<wbr>(string, <wbr>IService)<wbr></a></td>
 								<td>void</td>
-								<td>
-									<div></div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/CondenserDocs/api/CondenserDotNet.Server/CustomRouter/8731F30E">RouteAsync<wbr>(RouteContext)<wbr></a></td>
-								<td>Task</td>
 								<td>
 									<div></div>
 								</td>

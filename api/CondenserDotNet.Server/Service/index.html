@@ -135,13 +135,20 @@
 		<li><a href="/CondenserDocs/api/CondenserDotNet.Server">CondenserDotNet<wbr>.Server</a></li>
 		<li role="separator" class="divider"></li>
 			<li class="header">Class Types</li>
+				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/ApplicationBuilderExtensions">Application<wbr>Builder<wbr>Extensions</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/CondenserConfiguration">Condenser<wbr>Configuration</a></li>
+				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/ConfigurationBuilder">ConfigurationBuilder</a></li>
+				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/CurrentState">CurrentState</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/CustomRouter">CustomRouter</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/RoutingData">RoutingData</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/RoutingHost">RoutingHost</a></li>
+				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/RoutingMiddleware">RoutingMiddleware</a></li>
 				<li class="selected"><a href="/CondenserDocs/api/CondenserDotNet.Server/Service">Service</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/ServiceBase">ServiceBase</a></li>
+				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/ServiceCallMiddleware">Service<wbr>Call<wbr>Middleware</a></li>
+				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/ServiceCollectionExtensions">Service<wbr>Collection<wbr>Extensions</a></li>
 			<li class="header">Interface Types</li>
+				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/IConfigurationBuilder">I<wbr>Configuration<wbr>Builder</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/IConsulService">IConsulService</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/IHttpClientConfig">IHttpClientConfig</a></li>
 				<li><a href="/CondenserDocs/api/CondenserDotNet.Server/IService">IService</a></li>
@@ -233,11 +240,7 @@ class Type type-node
 							</tr>
 						</thead>
 							<tbody><tr>
-								<td><a href="/CondenserDocs/api/CondenserDotNet.Server/Service/396F23EE">Service<wbr>()<wbr></a></td>
-									<td></td>
-							</tr>
-							<tr>
-								<td><a href="/CondenserDocs/api/CondenserDotNet.Server/Service/BA404CD2">Service<wbr>(CurrentState, <wbr>IHttpClientConfig)<wbr></a></td>
+								<td><a href="/CondenserDocs/api/CondenserDotNet.Server/Service/0CC78549">Service<wbr>(CurrentState, <wbr>Func<wbr>&lt;string, <wbr>HttpClient&gt;<wbr>)<wbr></a></td>
 									<td></td>
 							</tr>
 					</tbody></table>
@@ -266,8 +269,22 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
+								<td><a href="/CondenserDocs/api/CondenserDotNet.Server/Service/FE78C955">IpEndPoint</a></td>
+								<td>IPEndPoint</td>
+								<td>
+									<div></div>
+								</td>
+							</tr>
+							<tr>
 								<td><a href="/CondenserDocs/api/CondenserDotNet.Server/Service/8EF62152">NodeId</a></td>
 								<td>string</td>
+								<td>
+									<div></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/CondenserDocs/api/CondenserDotNet.Server/Service/E2BC04CD">Requires<wbr>Authentication</a></td>
+								<td>bool</td>
 								<td>
 									<div></div>
 								</td>
@@ -353,17 +370,16 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/CondenserDocs/api/CondenserDotNet.Server/Service/B4DF4C34">Initialise<wbr>(string, <wbr>string, <wbr>string[], <wbr>string, <wbr>int)<wbr></a></td>
-								<td>void</td>
+								<td>Task</td>
 								<td>
 									<div></div>
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/CondenserDocs/api/CondenserDotNet.Server/Service/71053880">RoutesFromTags<wbr>(string[])<wbr></a></td>
-								<td>string[]</td>
+								<td><a href="/CondenserDocs/api/CondenserDotNet.Server/Service/6422FB97">ToString<wbr>()<wbr></a></td>
+								<td>string</td>
 								<td>
 									<div></div>
-											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
 							<tr>
