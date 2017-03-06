@@ -88,9 +88,9 @@
 
                     <ul class="sidebar-menu">
                         
-                <li><a href="/CondenserDocs/docs/Calling-a-Service">Calling A Service</a></li>
                 <li><a href="/CondenserDocs/docs/Configuration">Configuration</a></li>
                 <li><a href="/CondenserDocs/docs/Leader-Election">Leader Election</a></li>
+                <li><a href="/CondenserDocs/docs/Requesting-A-Service">Requesting A Service</a></li>
                 <li class="selected"><a href="/CondenserDocs/docs/Service-Port">Service Port</a></li>
                 <li><a href="/CondenserDocs/docs/Service-Registration">Service Registration</a></li>
 
@@ -108,19 +108,21 @@
 		<h1>Service Port</h1>
 	</section>
 	<section class="content">
-		<h2 id="example-to-configure-kestrel-on-a-dynamic-port">Example to configure Kestrel on a dynamic port</h2>
+		<p>When using dynamic services that have a central registry it is often desirable to have the service simply start on an
+available port rather than one fixed from configuration or code.</p>
+<p>To help you the library provides a simple method to get an available port.</p>
+<h2 id="example-to-configure-kestrel-on-a-dynamic-port">Example to configure Kestrel on a dynamic port</h2>
 <pre><code class="language-csharp">var host = new WebHostBuilder()
     .UseKestrel()
-    .UseUrls($&quot;http://*:{serviceManager.ServicePort}&quot;)
+    .UseUrls($&quot;http://*:{ServiceManagerOptions.GetNextAvailablePort()}&quot;)
     .UseStartup&lt;Startup&gt;()
     .Build();
 
 host.Run();
 </code></pre>
-<p>The first available port in the dynamic range for windows is allocated by default. You can override this if you have a specific port you would like to use.</p>
-<pre><code class="language-csharp">serviceManager.ServicePort = 5000;
-</code></pre>
-<p>You should assign this before registering or call RegisterServiceAsync() again if you change the details to send the new configuration to Consul.</p>
+<p><em>The port is not actually &quot;Reserved&quot; when you get it. However the Linux and Windows stack allocate the ports in a rotating list
+so the port should not be reallocated unless you are starting and stopping thousands of socket listeners in a few minutes which
+is unlikely.</em></p>
 
 	</section>
                 

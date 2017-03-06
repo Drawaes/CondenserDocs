@@ -90,9 +90,11 @@
 
     <li class="header"><i class="fa fa-bookmark"></i> Categories</li>    
         <li><a href="/blog/documentation">Documentation</a></li>
+        <li><a href="/blog/patch">Patch</a></li>
         <li><a href="/blog/refactor">Refactor</a></li>
     
     <li class="header"><i class="fa fa-calendar"></i> Archive</li>    
+        <li><a href="/blog/archive/2017/03">March, 2017</a></li>
         <li><a href="/blog/archive/2017/02">February, 2017</a></li>
     
     <li class="header"><i class="fa fa-user"></i> Authors</li>    
@@ -114,6 +116,32 @@
 	<section class="content">
 		
 
+        <h2><a href="/CondenserDocs/blog/server-progressing">Patch 2.0.2</a></h2>
+<dl class="dl-horizontal">
+    <dt><i class="fa fa-calendar"></i> Published</dt>
+    <dd>Monday, March 6, 2017</dd>
+        <dt><i class="fa fa-bookmark"></i> Category</dt>
+        <dd><a href="/blog/patch">Patch</a></dd>
+            <dt><i class="fa fa-user"></i> Author</dt>
+        <dd><a href="/blog/author/tim-seaward">Tim Seaward</a></dd>
+</dl>            <div>
+                <p>The first issue is the stripping of trailing names from the executing assembly should now be fixed with &quot;.Host&quot;, &quot;.Library&quot; and
+so on all removed by default. You can configure the suffixes you would like removed through the ServiceManagerConfig object.</p>
+<p>Next the server is going through a decent refactor with the useful middleware being brought into a single package and the
+middleware that contains experimental links (mostly to pipelines) being put into a seperate package for those that don't
+want to live on the bleeding edge.</p>
+<p>Some benchmarking has been done on the experimental client and the overhead of calling out is about 1/2 of the current overhead
+so I look forward to doing some more work around that and setting up a proper benchmark scripted environment to allow the results
+to be published in a continuous way.</p>
+<p>I am interested to hear your feedback, problems or feature requests so email me at seawardtim at gmail or file an issue and tell
+me the good the bad or just what you would like.</p>
+<p>P.S. Dean is making some progress on a new &quot;status&quot; viewer for the proxy, and I am working on a packaged server so
+if you have features you think would be great or samples/use cases you want covered please do shout out we are taking requests.</p>
+<p>Cheers</p>
+<p>Tim</p>
+
+            </div>
+        <hr />
         <h2><a href="/CondenserDocs/blog/client-refactor">Refactored the Client Libraries</a></h2>
 <dl class="dl-horizontal">
     <dt><i class="fa fa-calendar"></i> Published</dt>
@@ -127,13 +155,7 @@
 world to gain an understanding of what works and what doesn't. This has shown that the current API for registering your services required
 a lot of boilerplate code. Also if you wanted to change a single setting it required you to set a lot of settings you would like to leave it as
 the defaults.</p>
-<p>We also realised that is was becoming difficult to test various parts of the system and when you only wanted to use a single part (say you
-wanted to find services but you didn't have a service to register yourself) you still required all of the parts.</p>
-<p>Currently the new API is complete for the Registration/Discovery part however we won't be doing an official release yet as we have some work
-to do on the configuration. When the release is done we will likely move the client to 2.0.</p>
-<p>As a final part of the refactor we may move the API router out to a seperate repo and have it on its own path. This has yet to be confirmed.
-Dean is also working on a SPA Gui to manage and view data and statistics from the API Router.</p>
-
+                <a href="/CondenserDocs/blog/client-refactor">Read more...</a>
             </div>
         <hr />
         <h2><a href="/CondenserDocs/blog/new-release">Documentation started</a></h2>

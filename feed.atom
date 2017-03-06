@@ -4,7 +4,18 @@
 	<id>http://drawaes.github.io/CondenserDocs</id>
 	<title />
 	<rights>2017</rights>
-	<updated>2017-02-28T05:23:24Z</updated>
+	<updated>2017-03-06T02:02:47Z</updated>
+	<entry>
+		<author>
+			<name>Tim Seaward</name>
+		</author>
+		<link href="http://drawaes.github.io/CondenserDocs/blog/server-progressing" />
+		<id>http://drawaes.github.io/CondenserDocs/blog/server-progressing</id>
+		<title>Patch 2.0.2</title>
+		<updated>2017-03-06T00:00:00Z</updated>
+		<summary>&lt;p&gt;The first issue is the stripping of trailing names from the executing assembly should now be fixed with ".Host", ".Library" and
+so on all removed by default. You can configure the suffixes you would like removed through the ServiceManagerConfig object.&lt;/p&gt;</summary>
+	</entry>
 	<entry>
 		<author>
 			<name>Tim Seaward</name>
