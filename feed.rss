@@ -5,8 +5,28 @@
 		<link>http://drawaes.github.io/CondenserDocs</link>
 		<description />
 		<copyright>2017</copyright>
-		<pubDate>Sat, 12 Aug 2017 20:36:56 GMT</pubDate>
-		<lastBuildDate>Sat, 12 Aug 2017 20:36:56 GMT</lastBuildDate>
+		<pubDate>Sat, 12 Aug 2017 21:00:36 GMT</pubDate>
+		<lastBuildDate>Sat, 12 Aug 2017 21:00:36 GMT</lastBuildDate>
+		<item>
+			<title>Catching up, from being a bit slack</title>
+			<link>http://drawaes.github.io/CondenserDocs/blog/catching-up</link>
+			<description>&lt;p&gt;I haven't blogged about releases in a while. For that I am sorry, there have been releases on going, including patches and more features like maintaince mode, de-registration and many more that I have forgotten. There are release notes for them all.&lt;/p&gt;</description>
+			<author>Tim Seaward</author>
+			<guid>http://drawaes.github.io/CondenserDocs/blog/catching-up</guid>
+			<pubDate>Sat, 12 Aug 2017 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;I haven't blogged about releases in a while. For that I am sorry, there have been releases on going, including patches and more features like maintaince mode, de-registration and many more that I have forgotten. There are release notes for them all.&lt;/p&gt;
+&lt;p&gt;I have improved the testing coverage of the things that are important a lot and have been working with some people using it in large environments to iron out some bugs. But now things are looking good. I have some plans, minor enhancements that I have added issues for but the reverse proxy is where there will be a lot of focus coming.&lt;/p&gt;
+&lt;p&gt;If anyone wants to dig in and help that would be awesome, any area is welcome but especially these&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Another provider other than consul, zookeeper or redis? This will help prove out and find now issues around abstracting the provider&lt;/li&gt;
+&lt;li&gt;General help on the reverse proxy, I plan to change to doing this with ASP.NET Core 2.0 and then quickly moving to the abstractions they are building out there.&lt;/li&gt;
+&lt;li&gt;A json comparison engine for Swagger docs for doing API change validation and rules.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Anyway keep hanging around, bring the bug reports, and PR's are always welcome.&lt;/p&gt;
+&lt;p&gt;Cheers&lt;/p&gt;
+&lt;p&gt;Tim&lt;/p&gt;
+</content:encoded>
+		</item>
 		<item>
 			<title>Patch 2.0.2</title>
 			<link>http://drawaes.github.io/CondenserDocs/blog/server-progressing</link>

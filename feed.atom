@@ -4,7 +4,29 @@
 	<id>http://drawaes.github.io/CondenserDocs</id>
 	<title />
 	<rights>2017</rights>
-	<updated>2017-08-12T20:36:56Z</updated>
+	<updated>2017-08-12T21:00:36Z</updated>
+	<entry>
+		<author>
+			<name>Tim Seaward</name>
+		</author>
+		<link href="http://drawaes.github.io/CondenserDocs/blog/catching-up" />
+		<id>http://drawaes.github.io/CondenserDocs/blog/catching-up</id>
+		<title>Catching up, from being a bit slack</title>
+		<updated>2017-08-12T00:00:00Z</updated>
+		<content>&lt;p&gt;I haven't blogged about releases in a while. For that I am sorry, there have been releases on going, including patches and more features like maintaince mode, de-registration and many more that I have forgotten. There are release notes for them all.&lt;/p&gt;
+&lt;p&gt;I have improved the testing coverage of the things that are important a lot and have been working with some people using it in large environments to iron out some bugs. But now things are looking good. I have some plans, minor enhancements that I have added issues for but the reverse proxy is where there will be a lot of focus coming.&lt;/p&gt;
+&lt;p&gt;If anyone wants to dig in and help that would be awesome, any area is welcome but especially these&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Another provider other than consul, zookeeper or redis? This will help prove out and find now issues around abstracting the provider&lt;/li&gt;
+&lt;li&gt;General help on the reverse proxy, I plan to change to doing this with ASP.NET Core 2.0 and then quickly moving to the abstractions they are building out there.&lt;/li&gt;
+&lt;li&gt;A json comparison engine for Swagger docs for doing API change validation and rules.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Anyway keep hanging around, bring the bug reports, and PR's are always welcome.&lt;/p&gt;
+&lt;p&gt;Cheers&lt;/p&gt;
+&lt;p&gt;Tim&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;I haven't blogged about releases in a while. For that I am sorry, there have been releases on going, including patches and more features like maintaince mode, de-registration and many more that I have forgotten. There are release notes for them all.&lt;/p&gt;</summary>
+	</entry>
 	<entry>
 		<author>
 			<name>Tim Seaward</name>
