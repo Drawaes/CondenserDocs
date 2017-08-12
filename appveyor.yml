@@ -32,7 +32,7 @@ build_script:
 
 on_success:
   - git stash
-  - git checkout gh-pages
+  - git checkout gh-pages --force
   - git rm -rf .
   - xcopy ..\output . /E
   # EDIT your domain name or remove if not using a custom domain
