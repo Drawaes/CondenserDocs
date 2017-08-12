@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -110,32 +110,42 @@
 	<section class="content">
 		<h2 id="example-for-configuration">Example for configuration</h2>
 <p>Configuration follows a LIFO policy, in that the last configuration item registered will &quot;win&quot; and override the same keys from a previous registration. Both static and dynamic registrations will override each other. To access values you call</p>
-<pre><code class="language-csharp">var configValue = serviceManager.Config[&quot;MyKey&quot;];
+<pre><code class="language-csharp">var configValue = configRegistry[&quot;MyKey&quot;];
 </code></pre>
 <p>If the key doesn't exist it will throw an exception. You can access it with the normal tryget pattern as well</p>
-<pre><code class="language-csharp">string configValue;
-if(serviceManager.Config.TryGetValue(&quot;MyKey&quot;, out configValue))
+<pre><code class="language-csharp">if(configRegistry.TryGetValue(&quot;MyKey&quot;, out string configValue))
 {
 	//do something with the key
 }
 </code></pre>
+<p>Keys are flattened in the same pattern that ASP.NET Core uses such that</p>
+<pre><code class="language-json">{
+    &quot;Parent&quot;:
+    {
+        &quot;ChildKey&quot; : &quot;Value&quot;
+    }
+}
+</code></pre>
+<p>Can be accessed by</p>
+<pre><code class="language-csharp">var configValue = configRegistry[&quot;Parent:ChildKey&quot;];
+</code></pre>
 <h3 id="static-configuration">Static configuration</h3>
 <p>To register a static set of keys you call the following</p>
-<pre><code class="language-csharp">var result = await ServiceManager.Config.AddStaticKeyPathAsync(&quot;my/keys/path&quot;);
+<pre><code class="language-csharp">var result = await configRegistry.AddStaticKeyPathAsync(&quot;my/keys/path&quot;);
 </code></pre>
 <p>result will be false if the key bucket or key was not found otherwise it will return true and add all of the child keys recursively. Keys will be in the format keyPath:keyPath:Key in the config after that to comply with the ASP.Net configuration. It will not include the path prefix that you used in adding the configuraiton (in this case &quot;my/key/path&quot;)</p>
 <h3 id="dynamic-configuration">Dynamic configuration</h3>
 <p>You can register a key path for dynamic configuration. This will watch consul for any changes in a a callback fashion. It uses async long polling so it should react instantly and without causing undue network traffic or system load.
 Below is how you register a key space that you want the library to watch until disposal.</p>
-<pre><code class="language-csharp">var manager = new ServiceManager(&quot;TestService&quot;);
-    await manager.Config.AddUpdatingPathAsync(&quot;org/test5/&quot;);
+<pre><code class="language-csharp">var registry = new ConsulRegistry();
+    await registry.AddUpdatingPathAsync(&quot;org/test5/&quot;);
 </code></pre>
 <p>You can also register a callback to alert you if a specific key is updated or if any key in the config is updated. The any key might be triggered even if there is no actual effective update (due to an override) so applications will need to check if their information has actually been updated.
 The single key watch will check for an actual update and only return if that key has changed.</p>
-<pre><code class="language-csharp">var singleCallBack = manager.Config.AddWatchOnSingleKey(&quot;test1&quot;, () =&gt; Console.Writeline(&quot;Key Changed!&quot;);
+<pre><code class="language-csharp">var singleCallBack = registry.AddWatchOnSingleKey(&quot;test1&quot;, () =&gt; Console.Writeline(&quot;Key Changed!&quot;);
 </code></pre>
 <p>If you want any update to trigger your callback just do</p>
-<pre><code class="language-csharp">var multipleCallBack = manager.Config.AddWatchOnEntireConfig(
+<pre><code class="language-csharp">var multipleCallBack = registry.AddWatchOnEntireConfig(
     () =&gt; Console.Writeline(&quot;Some key changed, or multiple keys changed, or maybe none?&quot;);
 </code></pre>
 
