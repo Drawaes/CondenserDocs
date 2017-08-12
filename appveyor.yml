@@ -31,6 +31,7 @@ build_script:
   - ..\Wyam\wyam --output ..\output
 
 on_success:
+  - git stash
   - git checkout gh-pages
   - git rm -rf .
   - xcopy ..\output . /E
